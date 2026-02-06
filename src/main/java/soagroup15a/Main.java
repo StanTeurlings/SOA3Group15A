@@ -1,4 +1,4 @@
-package soagroup15a;
+package src.main.java.soagroup15a;
 
 import java.time.LocalDateTime;
 import java.time.Month;

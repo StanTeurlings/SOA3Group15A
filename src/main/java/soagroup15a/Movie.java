@@ -1,4 +1,4 @@
-package soagroup15a;
+package src.main.java.soagroup15a;
 
 import java.util.ArrayList;
 import java.util.List;
