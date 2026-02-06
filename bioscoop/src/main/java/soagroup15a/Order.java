@@ -1,3 +1,5 @@
+package soagroup15a;
+
 import java.time.DayOfWeek;
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +40,7 @@ public class Order {
 
             DayOfWeek day = screening.dateAndTime.getDayOfWeek();
             boolean isWeekday = day == DayOfWeek.MONDAY || day == DayOfWeek.TUESDAY
-                            || day == DayOfWeek.WEDNESDAY || day == DayOfWeek.THURSDAY;
+                    || day == DayOfWeek.WEDNESDAY || day == DayOfWeek.THURSDAY;
 
             boolean secondTicketFree = (i % 2 == 1) && (isStudentOrder || isWeekday);
 
@@ -59,13 +61,12 @@ public class Order {
             }
 
             if (allWeekend) {
-                totalPrice *= 0.9; 
+                totalPrice *= 0.9;
             }
         }
 
         return totalPrice;
     }
-
 
     public String export(TicketExportFormat format) {
         StringBuilder sb = new StringBuilder();
@@ -74,7 +75,7 @@ public class Order {
             case PLAINTEXT:
                 sb.append("Order Number: ").append(orderNr).append("\n");
                 sb.append("Student Order: ")
-                  .append(isStudentOrder ? "Yes" : "No").append("\n");
+                        .append(isStudentOrder ? "Yes" : "No").append("\n");
                 sb.append("Tickets:\n");
 
                 for (MovieTicket ticket : tickets) {
@@ -104,7 +105,7 @@ public class Order {
                 sb.append(String.format("  \"totalPrice\": %.2f\n", calculatePrice()));
                 sb.append("}");
                 break;
-          }
+        }
 
         return sb.toString();
     }

@@ -1,3 +1,5 @@
+package soagroup15a;
+
 import java.time.LocalDateTime;
 
 public class MovieScreening {
@@ -6,10 +8,9 @@ public class MovieScreening {
     private double pricePerSeat;
 
     public MovieScreening(
-        Movie movie, 
-        LocalDateTime dateAndTime, 
-        double pricePerSeat
-    ) {
+            Movie movie,
+            LocalDateTime dateAndTime,
+            double pricePerSeat) {
         this.movie = movie;
         this.dateAndTime = dateAndTime;
         this.pricePerSeat = pricePerSeat;

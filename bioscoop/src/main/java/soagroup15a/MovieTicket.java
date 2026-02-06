@@ -1,3 +1,5 @@
+package soagroup15a;
+
 public class MovieTicket {
     private int rowNr;
     private int seatNr;
@@ -5,11 +7,10 @@ public class MovieTicket {
     private MovieScreening movieScreening;
 
     public MovieTicket(
-        MovieScreening movieScreening,
-        boolean isPremiumReservation,
-        int seatRow,
-        int seatnr
-    ) {
+            MovieScreening movieScreening,
+            boolean isPremiumReservation,
+            int seatRow,
+            int seatnr) {
         this.movieScreening = movieScreening;
         this.isPremium = isPremiumReservation;
         this.rowNr = seatRow;

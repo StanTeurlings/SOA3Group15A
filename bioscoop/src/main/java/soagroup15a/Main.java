@@ -1,3 +1,5 @@
+package soagroup15a;
+
 import java.time.LocalDateTime;
 import java.time.Month;
 
@@ -7,8 +9,8 @@ public class Main {
         Movie movie1 = new Movie("Movie 1");
         Movie movie2 = new Movie("Movie 2");
 
-        MovieScreening screening1 = new MovieScreening(movie1, LocalDateTime.of(2026, Month.FEBRUARY, 3, 18, 30), 10.0); 
-        MovieScreening screening2 = new MovieScreening(movie2, LocalDateTime.of(2026, Month.FEBRUARY, 8, 20, 0), 12.0); 
+        MovieScreening screening1 = new MovieScreening(movie1, LocalDateTime.of(2026, Month.FEBRUARY, 3, 18, 30), 10.0);
+        MovieScreening screening2 = new MovieScreening(movie2, LocalDateTime.of(2026, Month.FEBRUARY, 8, 20, 0), 12.0);
 
         movie1.addScreening(screening1);
         movie2.addScreening(screening2);
