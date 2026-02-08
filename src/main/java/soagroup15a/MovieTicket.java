@@ -1,4 +1,4 @@
-package src.main.java.soagroup15a;
+package soagroup15a;
 
 public class MovieTicket {
     private int rowNr;
