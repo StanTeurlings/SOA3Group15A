@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import soagroup15a.Movie;
 import soagroup15a.MovieScreening;
 import soagroup15a.MovieTicket;
-import soagroup15a.Order;
+import soagroup15a.Orders.Order;
 
 import java.time.LocalDateTime;
 

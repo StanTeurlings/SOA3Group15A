@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 public class MovieScreening {
     private Movie movie;
-    LocalDateTime dateAndTime;
+    public LocalDateTime dateAndTime;
     private double pricePerSeat;
 
     public MovieScreening(
@@ -23,5 +23,9 @@ public class MovieScreening {
     @Override
     public String toString() {
         return movie.toString() + " at " + dateAndTime.toString();
+    }
+
+    public LocalDateTime getDateAndTime() {
+        return dateAndTime;
     }
 }
